@@ -12,7 +12,6 @@ get '/app.js' do
 end
 
 post '/import' do
+  require 'pry'; binding.pry
   erb :index
-  #script_info = BootTimer.new(params[:post][:data]).process
-  #erb :results, :locals => {:data => script_info}
 end

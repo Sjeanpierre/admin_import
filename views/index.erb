@@ -16,7 +16,7 @@
 <body>
   <div class="container">
 
-    <form action="/import" method="post" class="form-audit">
+    <form action="/import" method="POST" enctype="multipart/form-data" class="form-audit">
       <h2 class="form-audit-heading">Please Select file to upload</h2>
       <div class="form-group">
         <label for="exampleInputFile">File input</label>
@@ -24,7 +24,7 @@
         <p class="help-block">Please select XLS, XLSX, or CSV file.</p>
       </div>
 
-      <button class="btn btn-lg btn-primary btn-block submit" type="submit">Import</button>
+      <input class="btn btn-lg btn-primary btn-block submit" name="commit" type="submit" value="Import" />
     </form>
 
   </div> <!-- /container -->
